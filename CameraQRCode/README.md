@@ -28,5 +28,5 @@ buildFeatures {
 #### 使用 ViewBinding 的步骤：
 1. 首先要调用 activity_main.xml 布局文件对应的 Binding 类，也就是 ActivityMainBinding 的 inflate() 函数去加载该布局，
    inflate() 函数接收一个 LayoutInflater 参数，在 Activity 中是可以直接获取到的
-2. 接下来调用 Binding 类的 getRoot() 函数可以得到 activity_main.xml 中根元素的实例
+2. 接下来调用 ActivityMainBinding 类的 getRoot() 函数可以得到 activity_main.xml 中根元素的实例
 3. 把根元素的实例传入到 setContentView() 函数当中，这样 Activity 就可以成功显示 activity_main.xml 这个布局的内容了。
