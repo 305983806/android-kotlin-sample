@@ -3,15 +3,15 @@
 
 ## 相关知识点（踩坑记）
 
-### 找不到 ActivityMainBinding 类
+### 一、找不到 ActivityMainBinding 类
 这是 ViewBinding 相关知识点。
 
 #### ViewBinding 是什么
 2020年的3月份 巨佬 JakeWharton 开源的 butterknife 被官宣 停止维护，关于 ViewBinding 的介绍在这里[官网](https://developer.android.google.cn/topic/libraries/view-binding?hl=zh-cn)
 
 > 替换 findViewById 的原因大概归结为以下几个原因：
-> 过于冗余：findViewById 对应所有的 View 都需要书写 findViewById(R.id.xxx) 的方法
-> 不安全：所谓的不安全，分为两点，一是空类型的不安全，findViewById 有可能返回 null，导致程序异常；二是强转的不安全，findViewById，将对应的 id 需要强转成对应的 view 例如
+> 1. 过于冗余：findViewById 对应所有的 View 都需要书写 findViewById(R.id.xxx) 的方法
+> 2. 不安全：所谓的不安全，分为两点，一是空类型的不安全，findViewById 有可能返回 null，导致程序异常；二是强转的不安全，findViewById，将对应的 id 需要强转成对应的 view 例如
 > ``Textview textView = findViewById(R.id.textview);``
 > 一旦我的类型给错了，就会出现异常，比如将 textview 错误地强转成 ImageView
 
