@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Carson</title>
+    <script>
+
+        function aa() {
+
+        function callAndroid(){
+            // 由于对象映射，所以调用test对象等于调用Android映射的对象
+            val msg = window.mjs.hello("js去调用了android中的hello方法");
+<!--            console.log(msg);-->
+<!--            alert(msg);-->
+            document.location = "js://webview?arg1=111&arg2=222";
+         }
+
+         function returnResult(result){
+            alert("result is" + result);
+         }
+
+        }
+
+      </script>
+</head>
+<body>
+<button type="button" id="button1" onclick="callAndroid()">测试按钮</button>
+</body>
+</html>
+

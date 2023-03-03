@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
         val previewView: PreviewView = viewBinding.viewFinder
 
         val options = BarcodeScannerOptions.Builder()
-            .setBarcodeFormats(Barcode.FORMAT_QR_CODE)
+            .setBarcodeFormats(Barcode.FORMAT_ALL_FORMATS)
             .build()
         barcodeScanner = BarcodeScanning.getClient(options)
 
