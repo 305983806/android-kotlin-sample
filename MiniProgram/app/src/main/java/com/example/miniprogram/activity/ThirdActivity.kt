@@ -19,29 +19,29 @@ import com.example.miniprogram.ui.theme.MiniProgramTheme
 class ThirdActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            MiniProgramTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Column(
-                        modifier = Modifier.fillMaxSize(),
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Center
-                    ) {
-                        Text(text = "这是第三页")
-                        Button(onClick = {
-                            ActivityCollector.finishAll()
-//                            android.os.Process.killProcess(android.os.Process.myPid())
-                        }) {
-                            Text(text = "关闭小程序")
-                        }
-                    }
-                }
-            }
-        }
+//        setContent {
+//            MiniProgramTheme {
+//                // A surface container using the 'background' color from the theme
+//                Surface(
+//                    modifier = Modifier.fillMaxSize(),
+//                    color = MaterialTheme.colors.background
+//                ) {
+//                    Column(
+//                        modifier = Modifier.fillMaxSize(),
+//                        horizontalAlignment = Alignment.CenterHorizontally,
+//                        verticalArrangement = Arrangement.Center
+//                    ) {
+//                        Text(text = "这是第三页")
+//                        Button(onClick = {
+//                            ActivityCollector.finishAll()
+////                            android.os.Process.killProcess(android.os.Process.myPid())
+//                        }) {
+//                            Text(text = "关闭小程序")
+//                        }
+//                    }
+//                }
+//            }
+//        }
         setCustomTaskDescription()
     }
 

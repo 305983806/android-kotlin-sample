@@ -20,30 +20,30 @@ import com.example.miniprogram.ui.theme.MiniProgramTheme
 class SecondActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val intent = Intent(this, ThirdActivity::class.java)
-
-        setContent {
-            MiniProgramTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Column(
-                        modifier = Modifier.fillMaxSize(),
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Center
-                    ) {
-                        Text(text = "这是第二页")
-                        Button(onClick = {
-                            startActivity(intent)
-                        }) {
-                            Text(text = "跳转至第三页")
-                        }
-                    }
-                }
-            }
-        }
+//        val intent = Intent(this, ThirdActivity::class.java)
+//
+//        setContent {
+//            MiniProgramTheme {
+//                // A surface container using the 'background' color from the theme
+//                Surface(
+//                    modifier = Modifier.fillMaxSize(),
+//                    color = MaterialTheme.colors.background
+//                ) {
+//                    Column(
+//                        modifier = Modifier.fillMaxSize(),
+//                        horizontalAlignment = Alignment.CenterHorizontally,
+//                        verticalArrangement = Arrangement.Center
+//                    ) {
+//                        Text(text = "这是第二页")
+//                        Button(onClick = {
+//                            startActivity(intent)
+//                        }) {
+//                            Text(text = "跳转至第三页")
+//                        }
+//                    }
+//                }
+//            }
+//        }
         setCustomTaskDescription()
     }
 

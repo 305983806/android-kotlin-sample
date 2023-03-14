@@ -22,6 +22,7 @@ class MyWebViewClient: WebViewClient() {
             if (uri?.authority.equals("webview")) {
                 val collection = uri?.queryParameterNames
                 var result = "Android 回调给 JS 的数据为 userid=123456"
+                //TODO
                 view?.loadUrl("javascript:returnResult(\"$result\")");
             }
             return true
